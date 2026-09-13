@@ -1,0 +1,19 @@
+# Agent & CLI caches
+.agent/
+.agents/
+.claude/
+.codex/
+.cursor/
+.gemini/
+.impeccable/
+.npm-cache/
+agent/
+prints/
+skills-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
