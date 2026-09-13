@@ -1164,9 +1164,9 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 xl:gap-20 items-start">
                 
                 <!-- LADO ESQUERDO: Eyebrow + Título + Narrativa + Divisória + Próximo Passo -->
-                <div class="lg:col-span-5 flex flex-col justify-start mb-2 lg:mb-0">
+                <div class="lg:col-span-5 flex flex-col justify-start text-center lg:text-left items-center lg:items-start mb-8 lg:mb-0">
                     <!-- Eyebrow with decorative purple bar -->
-                    <div class="flex flex-col items-start mb-5 sm:mb-8">
+                    <div class="flex flex-col items-center lg:items-start mb-4 sm:mb-8">
                         <span class="text-[9.5px] sm:text-[11px] tracking-[0.25em] sm:tracking-[0.3em] text-gray-500 uppercase font-semibold">F A Q</span>
                         <div class="w-8 h-[2px] bg-brand-purple mt-2.5 rounded-full"></div>
                     </div>
@@ -1178,15 +1178,15 @@
                     </h2>
 
                     <!-- Texto Explicativo -->
-                    <p class="text-[0.92rem] sm:text-[1.05rem] text-gray-500 max-w-[420px] leading-[1.65] font-normal mb-6 sm:mb-10">
+                    <p class="text-[0.92rem] sm:text-[1.05rem] text-gray-500 max-w-[420px] mx-auto lg:mx-0 leading-[1.65] font-normal mb-0 lg:mb-10">
                         Reunimos aqui as perguntas mais comuns para você entender como funciona o processo e contratar com mais segurança.
                     </p>
 
                     <!-- Divisória Fina Desktop -->
-                    <div class="hidden sm:block w-full max-w-[340px] sm:max-w-[380px] h-[1px] bg-purple-200/70 mb-5 sm:mb-8"></div>
+                    <div class="hidden lg:block w-full max-w-[340px] sm:max-w-[380px] h-[1px] bg-purple-200/70 mb-5 sm:mb-8"></div>
 
-                    <!-- Próximo Passo: Box acolhedor no mobile, limpo no desktop -->
-                    <div class="p-4 sm:p-0 rounded-2xl sm:rounded-none bg-white/60 sm:bg-transparent border border-purple-100/80 sm:border-0 shadow-xs sm:shadow-none">
+                    <!-- Próximo Passo Desktop -->
+                    <div class="hidden lg:block">
                         <p class="text-[0.92rem] sm:text-[1.05rem] text-gray-600 leading-[1.55] font-normal">
                             Se ainda restar alguma dúvida,<br>
                             o próximo passo é <button type="button" onclick="openBudgetModal()" class="text-brand-purple font-bold hover:underline underline-offset-4 cursor-pointer focus:outline-none">conversar.</button>
@@ -1194,22 +1194,22 @@
                     </div>
                 </div>
 
-                <!-- LADO DIREITO: Accordion Minimalista & Editorial com Cards Arejados no Mobile -->
-                <div class="lg:col-span-7 flex flex-col justify-start gap-3 sm:gap-0 sm:border-t sm:border-purple-200/70 faq-container">
+                <!-- LADO DIREITO: Accordion Minimalista & Editorial com Cards Perfeitamente Equilibrados no Mobile -->
+                <div class="lg:col-span-7 w-full flex flex-col justify-start gap-3.5 sm:gap-0 sm:border-t sm:border-purple-200/70 faq-container">
                     
                     <!-- Pergunta 1 (Inicia aberta conforme referência visual) -->
-                    <div class="faq-item active p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="true">
-                            <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-bold text-brand-purple transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
+                    <div class="faq-item active p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/85 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-sm sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-4 py-0 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="true">
+                            <span class="faq-question text-[0.96rem] sm:text-[1.18rem] font-bold text-brand-purple transition-colors duration-200 group-hover:text-brand-purple tracking-tight flex-1">
                                 Quanto tempo leva para ficar pronto?
                             </span>
-                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-8 h-8 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 −
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-relaxed font-normal pt-3.5 sm:pt-0 sm:pb-6 max-w-[620px]">
                                     O prazo varia conforme o tipo de projeto, mas sempre alinhamos isso no início para que você saiba exatamente o que esperar.
                                 </p>
                             </div>
@@ -1217,18 +1217,18 @@
                     </div>
 
                     <!-- Pergunta 2 -->
-                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
-                            <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
+                    <div class="faq-item p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/85 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-sm sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-4 py-0 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                            <span class="faq-question text-[0.96rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight flex-1">
                                 Preciso já ter domínio e hospedagem?
                             </span>
-                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-8 h-8 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-relaxed font-normal pt-3.5 sm:pt-0 sm:pb-6 max-w-[620px]">
                                     Não. Se você ainda não tiver, podemos orientar todo o processo e indicar a melhor solução para o seu projeto.
                                 </p>
                             </div>
@@ -1236,18 +1236,18 @@
                     </div>
 
                     <!-- Pergunta 3 -->
-                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
-                            <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
+                    <div class="faq-item p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/85 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-sm sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-4 py-0 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                            <span class="faq-question text-[0.96rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight flex-1">
                                 Vocês fazem alterações depois da entrega?
                             </span>
-                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-8 h-8 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-relaxed font-normal pt-3.5 sm:pt-0 sm:pb-6 max-w-[620px]">
                                     Sim. Ajustes previstos no projeto são realizados durante o desenvolvimento e também podemos combinar suporte ou alterações futuras conforme a necessidade.
                                 </p>
                             </div>
@@ -1255,18 +1255,18 @@
                     </div>
 
                     <!-- Pergunta 4 -->
-                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
-                            <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
+                    <div class="faq-item p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/85 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-sm sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-4 py-0 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                            <span class="faq-question text-[0.96rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight flex-1">
                                 Como funciona o pagamento?
                             </span>
-                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-8 h-8 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-relaxed font-normal pt-3.5 sm:pt-0 sm:pb-6 max-w-[620px]">
                                     As condições são alinhadas antes do início do projeto. A forma de pagamento pode variar conforme o serviço contratado.
                                 </p>
                             </div>
@@ -1274,18 +1274,18 @@
                     </div>
 
                     <!-- Pergunta 5 -->
-                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
-                            <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
+                    <div class="faq-item p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/85 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-sm sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-4 py-0 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                            <span class="faq-question text-[0.96rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight flex-1">
                                 O que eu preciso enviar para começar?
                             </span>
-                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-8 h-8 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-relaxed font-normal pt-3.5 sm:pt-0 sm:pb-6 max-w-[620px]">
                                     Depende do projeto, mas normalmente precisamos das informações do negócio, serviços, textos, identidade visual, imagens e referências que você já possuir.
                                 </p>
                             </div>
@@ -1293,21 +1293,31 @@
                     </div>
 
                     <!-- Pergunta 6 -->
-                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
-                            <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
+                    <div class="faq-item p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/85 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-sm sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-4 py-0 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                            <span class="faq-question text-[0.96rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight flex-1">
                                 A página vai funcionar no celular?
                             </span>
-                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-8 h-8 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-relaxed font-normal pt-3.5 sm:pt-0 sm:pb-6 max-w-[620px]">
                                     Sim. Todos os projetos são desenvolvidos de forma responsiva para funcionar corretamente em desktop, tablet e celular.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Próximo Passo Mobile (Centralizado e colocado no final natural do FAQ) -->
+                    <div class="block lg:hidden w-full mt-4 text-center">
+                        <div class="p-5 rounded-2xl bg-white/70 border border-purple-100/90 shadow-sm max-w-[420px] mx-auto">
+                            <p class="text-[0.92rem] text-gray-600 leading-relaxed font-normal">
+                                Se ainda restar alguma dúvida,<br>
+                                o próximo passo é <button type="button" onclick="openBudgetModal()" class="text-brand-purple font-bold hover:underline underline-offset-4 cursor-pointer focus:outline-none">conversar.</button>
+                            </p>
                         </div>
                     </div>
 
