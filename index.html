@@ -30,10 +30,42 @@
             }
         }
     </script>
+    
+    <style>
+        /* Responsive Background for Hero */
+        .hero-bg-responsive {
+            background-image: url('assets/bg-hero-mobile.png');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+        }
+        @media (min-width: 1024px) {
+            .hero-bg-responsive {
+                background-image: url('assets/bg-hero.png');
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+
+        /* Responsive Background for Section 9 (CTA Final) */
+        .section9-bg-responsive {
+            background-image: url('assets/section9bg-mobile.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        @media (min-width: 1024px) {
+            .section9-bg-responsive {
+                background-image: url('assets/section9bg.png');
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+    </style>
 </head>
 <body class="antialiased text-gray-900 bg-white selection:bg-brand-purple selection:text-white">
 
-    <section class="relative w-full min-h-screen lg:h-screen bg-cover bg-[position:85%_center] lg:bg-center overflow-hidden flex flex-col" style="background-image: url('assets/bg-hero.png');">
+    <section class="relative w-full min-h-[820px] lg:min-h-screen lg:h-screen overflow-hidden flex flex-col hero-bg-responsive">
         
         <!-- Header -->
         <header class="w-full px-6 md:px-12 py-5 lg:py-6 flex items-center justify-between z-20">
@@ -42,7 +74,7 @@
                 ATOS<span class="text-brand-purple">web</span>
             </div>
 
-            <!-- Nav -->
+            <!-- Nav (Desktop) -->
             <nav class="hidden lg:flex items-center gap-9 text-[14px] font-medium text-gray-800">
                 <a href="#" class="relative text-brand-dark">
                     Início
@@ -55,8 +87,8 @@
                 <a href="#servicos" class="hover:text-brand-dark transition-colors">Contato</a>
             </nav>
 
-            <!-- Header CTA -->
-            <button type="button" onclick="openBudgetModal()" class="inline-flex items-center gap-2 sm:gap-2.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-[13.5px] font-semibold tracking-tight text-brand-dark bg-white/90 hover:bg-white backdrop-blur-md border border-purple-200/80 hover:border-brand-purple/80 shadow-[0_2px_10px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_18px_rgba(92,22,223,0.14)] transition-all duration-300 hover:scale-[1.01] active:scale-[0.98] cursor-pointer group">
+            <!-- Header CTA (Desktop) -->
+            <button type="button" onclick="openBudgetModal()" class="hidden lg:inline-flex items-center gap-2 sm:gap-2.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-[13.5px] font-semibold tracking-tight text-brand-dark bg-white/90 hover:bg-white backdrop-blur-md border border-purple-200/80 hover:border-brand-purple/80 shadow-[0_2px_10px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_18px_rgba(92,22,223,0.14)] transition-all duration-300 hover:scale-[1.01] active:scale-[0.98] cursor-pointer group">
                 <span class="w-1.5 h-1.5 rounded-full bg-brand-purple flex-shrink-0"></span>
                 <span class="group-hover:text-brand-purple transition-colors">Solicitar orçamento</span>
                 <div class="w-5 h-5 rounded-full bg-purple-50 group-hover:bg-brand-purple group-hover:text-white text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0">
@@ -66,14 +98,23 @@
                     </svg>
                 </div>
             </button>
+
+            <!-- Header Mobile Menu Icon (Fiel à hero-ref-mobile) -->
+            <button type="button" onclick="toggleMobileNav()" aria-label="Abrir menu de navegação" class="lg:hidden p-2 -mr-2 text-brand-dark focus:outline-none cursor-pointer">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="4" y1="7" x2="20" y2="7"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="17" x2="20" y2="17"></line>
+                </svg>
+            </button>
         </header>
 
         <!-- Main Content -->
-        <main class="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 flex-1 flex flex-col justify-center pt-6 sm:pt-0 pb-36 sm:pb-32 lg:pb-28">
+        <main class="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-12 flex-1 flex flex-col justify-start lg:justify-center pt-8 sm:pt-10 lg:pt-0 pb-[380px] sm:pb-[440px] lg:pb-28">
             
             <div class="max-w-[580px]">
                 <!-- Eyebrow -->
-                <div data-hero="eyebrow" class="flex items-center gap-2 sm:gap-2.5 text-[9px] sm:text-[10px] tracking-[0.22em] sm:tracking-[0.25em] text-gray-500 uppercase font-semibold mb-3.5 sm:mb-4 lg:mb-5">
+                <div data-hero="eyebrow" class="flex items-center gap-2 sm:gap-2.5 text-[9.5px] sm:text-[10px] tracking-[0.24em] sm:tracking-[0.25em] text-gray-500 uppercase font-medium sm:font-semibold mb-4 lg:mb-5">
                     <span>Sites</span>
                     <span class="text-gray-300">/</span>
                     <span>Landing Pages</span>
@@ -82,20 +123,21 @@
                 </div>
 
                 <!-- Headline -->
-                <h1 data-hero="headline" class="text-[2.15rem] sm:text-[2.85rem] lg:text-[3.4rem] leading-[1.08] tracking-[-0.03em] text-brand-dark mb-4 lg:mb-5">
-                    <span class="font-light">Um</span> <span class="font-extrabold">design</span><br>
-                    <span class="font-normal">bonito não basta,</span><br>
-                    <span class="font-normal">ele precisa gerar</span> <span class="font-bold text-brand-purple">Atos.</span>
+                <h1 data-hero="headline" class="text-[2.25rem] sm:text-[2.85rem] lg:text-[3.4rem] leading-[1.08] tracking-[-0.035em] text-brand-dark mb-4 lg:mb-5">
+                    <span class="font-light">Um</span> <span class="font-extrabold text-black">design</span><br>
+                    <span class="font-normal text-gray-900">bonito não basta,</span><br>
+                    <span class="font-normal text-gray-900">ele precisa gerar</span><br class="lg:hidden">
+                    <span class="font-extrabold text-brand-purple">Atos.</span>
                 </h1>
 
                 <!-- Paragraph -->
-                <p data-hero="text" class="text-[0.92rem] sm:text-[1.02rem] text-gray-600 max-w-[460px] mb-6 sm:mb-7 lg:mb-8 leading-[1.55] font-normal">
+                <p data-hero="text" class="text-[14px] sm:text-[15px] lg:text-[1.02rem] text-gray-600 max-w-[325px] sm:max-w-[420px] lg:max-w-[460px] mb-6 sm:mb-7 lg:mb-8 leading-[1.6] lg:leading-[1.55] font-normal">
                     Criamos sites e landing pages que não apenas impressionam, mas conectam, conversam e geram resultados reais para o seu negócio.
                 </p>
 
-                <!-- CTAs -->
-                <div data-hero="cta" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-6 lg:gap-7">
-                    <button type="button" onclick="openBudgetModal()" class="relative group overflow-hidden inline-flex items-center justify-center gap-3.5 px-6 sm:px-7 lg:px-8 py-3.5 sm:py-4 rounded-xl text-[14.5px] sm:text-[15px] font-semibold text-white bg-[#0A0A10] hover:bg-[#131122] border border-purple-500/30 hover:border-brand-purple/70 shadow-[0_10px_28px_-8px_rgba(92,22,223,0.42)] hover:shadow-[0_16px_36px_-6px_rgba(92,22,223,0.65)] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer w-full sm:w-auto">
+                <!-- CTAs Desktop (lg:flex) -->
+                <div data-hero="cta" class="hidden lg:flex items-center gap-7">
+                    <button type="button" onclick="openBudgetModal()" class="relative group overflow-hidden inline-flex items-center justify-center gap-3.5 px-8 py-4 rounded-xl text-[15px] font-semibold text-white bg-[#0A0A10] hover:bg-[#131122] border border-purple-500/30 hover:border-brand-purple/70 shadow-[0_10px_28px_-8px_rgba(92,22,223,0.42)] hover:shadow-[0_16px_36px_-6px_rgba(92,22,223,0.65)] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
                         <!-- Subtle shimmer light beam sweep on hover -->
                         <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/12 to-transparent pointer-events-none"></div>
                         
@@ -109,33 +151,48 @@
                         </div>
                     </button>
                     
-                    <a href="#portfolio" class="inline-flex justify-center sm:inline text-brand-dark font-semibold text-[14px] border-b-[1.5px] border-brand-dark pb-0.5 hover:text-gray-500 hover:border-gray-500 transition-colors py-1 sm:py-0">
+                    <a href="#portfolio" class="text-brand-dark font-semibold text-[14px] border-b-[1.5px] border-brand-dark pb-0.5 hover:text-gray-500 hover:border-gray-500 transition-colors">
                         Ver projetos
+                    </a>
+                </div>
+
+                <!-- CTAs Mobile (lg:hidden) — Fidelidade absoluta a hero-ref-mobile -->
+                <div data-hero="cta-mobile" class="lg:hidden flex flex-col items-start gap-3">
+                    <!-- CTA Principal Mobile -->
+                    <button type="button" onclick="openBudgetModal()" class="inline-flex items-center justify-between gap-3.5 px-5 py-3.5 rounded-xl text-[13.5px] font-semibold text-white bg-[#0A0A10] border border-white/10 shadow-[0_6px_20px_rgba(0,0,0,0.25)] active:scale-[0.98] transition-all cursor-pointer">
+                        <span>Quero um site que gera Atos</span>
+                        <span class="text-[#8B5CF6] text-base leading-none font-normal">→</span>
+                    </button>
+                    
+                    <!-- CTA Secundário Mobile -->
+                    <a href="#portfolio" class="inline-flex items-center justify-between gap-3.5 px-5 py-3 rounded-xl text-[13.5px] font-semibold text-black bg-white/95 border border-black active:scale-[0.98] transition-all">
+                        <span>Ver projetos</span>
+                        <span class="text-[#5C16DF] text-base leading-none font-normal">→</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Metrics (Bottom Left relative to main container) -->
-            <div data-hero="metrics" class="absolute bottom-6 sm:bottom-8 lg:bottom-10 left-5 sm:left-6 md:left-12 right-5 sm:right-auto flex items-center justify-between sm:justify-start gap-2.5 sm:gap-6 lg:gap-10">
+            <!-- Metrics (Bottom Left relative to main container, Desktop Only) -->
+            <div data-hero="metrics" class="hidden lg:flex absolute bottom-10 left-12 flex items-center gap-10">
                 <div data-hero="metric-item" class="flex flex-col">
-                    <span class="text-xl sm:text-2xl lg:text-[1.85rem] leading-none font-extrabold text-brand-dark">+50</span>
-                    <span class="text-[7.5px] sm:text-[8.5px] tracking-[0.15em] sm:tracking-[0.2em] text-gray-500 uppercase mt-1.5 sm:mt-2 font-semibold">Projetos entregues</span>
+                    <span class="text-[1.85rem] leading-none font-extrabold text-brand-dark">+50</span>
+                    <span class="text-[8.5px] tracking-[0.2em] text-gray-500 uppercase mt-2 font-semibold">Projetos entregues</span>
                 </div>
-                <div class="w-[1px] h-8 sm:h-9 bg-gray-300"></div>
+                <div class="w-[1px] h-9 bg-gray-300"></div>
                 <div data-hero="metric-item" class="flex flex-col">
-                    <span class="text-xl sm:text-2xl lg:text-[1.85rem] leading-none font-extrabold text-brand-dark">+30</span>
-                    <span class="text-[7.5px] sm:text-[8.5px] tracking-[0.15em] sm:tracking-[0.2em] text-gray-500 uppercase mt-1.5 sm:mt-2 font-semibold">Negócios impactados</span>
+                    <span class="text-[1.85rem] leading-none font-extrabold text-brand-dark">+30</span>
+                    <span class="text-[8.5px] tracking-[0.2em] text-gray-500 uppercase mt-2 font-semibold">Negócios impactados</span>
                 </div>
-                <div class="w-[1px] h-8 sm:h-9 bg-gray-300"></div>
+                <div class="w-[1px] h-9 bg-gray-300"></div>
                 <div data-hero="metric-item" class="flex flex-col">
-                    <span class="text-xl sm:text-2xl lg:text-[1.85rem] leading-none font-extrabold text-brand-dark">100%</span>
-                    <span class="text-[7.5px] sm:text-[8.5px] tracking-[0.15em] sm:tracking-[0.2em] text-gray-500 uppercase mt-1.5 sm:mt-2 font-semibold">Foco em resultados</span>
+                    <span class="text-[1.85rem] leading-none font-extrabold text-brand-dark">100%</span>
+                    <span class="text-[8.5px] tracking-[0.2em] text-gray-500 uppercase mt-2 font-semibold">Foco em resultados</span>
                 </div>
             </div>
             
         </main>
 
-        <!-- Decorative Elements -->
+        <!-- Decorative Elements (Desktop Only) -->
 
         <!-- Top Right Decor -->
         <div data-hero="decor" class="hidden lg:flex absolute top-40 right-16 flex-col items-start gap-1 z-10">
@@ -159,8 +216,8 @@
             <div class="w-8 h-[1.5px] bg-white/50 mt-1.5"></div>
         </div>
 
-        <!-- Seam Transition to Section 2: Smooth Atmospheric Light Dissolve -->
-        <div class="pointer-events-none absolute bottom-0 left-0 w-full h-40 lg:h-56 bg-gradient-to-b from-transparent via-[#F7F6FD]/70 to-[#F7F6FD] z-[2]"></div>
+        <!-- Seam Transition to Section 2: Smooth Atmospheric Light Dissolve (Desktop Only, preserves crisp A on mobile) -->
+        <div class="pointer-events-none absolute bottom-0 left-0 w-full hidden lg:block h-56 bg-gradient-to-b from-transparent via-[#F7F6FD]/70 to-[#F7F6FD] z-[2]"></div>
 
     </section>
 
@@ -1263,42 +1320,42 @@
     <!-- ========================================================================= -->
     <!-- SECTION 9: CTA FINAL (SEU PRÓXIMO ATO PODE COMEÇAR AQUI)                   -->
     <!-- ========================================================================= -->
-    <section id="cta" class="relative w-full bg-[#090416] bg-cover bg-center overflow-hidden py-20 sm:py-36 lg:py-44 flex flex-col justify-center items-center text-center" style="background-image: url('assets/section9bg.png');">
+    <section id="cta" class="relative w-full bg-[#090416] overflow-hidden py-20 sm:py-32 lg:py-44 min-h-[780px] sm:min-h-[820px] lg:min-h-0 flex flex-col justify-center items-center text-center section9-bg-responsive">
         
         <!-- Top Seam Transition: Encaixe contínuo e perfeito com a saída escura da Section 8 -->
         <div class="pointer-events-none absolute top-0 left-0 w-full h-28 lg:h-44 bg-gradient-to-b from-[#090416] via-[#090416]/50 to-transparent z-[2]"></div>
 
-        <div class="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 flex flex-col items-center justify-center">
+        <div class="relative z-10 w-full max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 flex flex-col items-center justify-center my-auto">
             
             <!-- 1. Eyebrow com barra centralizada -->
             <div class="flex flex-col items-center mb-5 sm:mb-8">
-                <span class="text-[9.5px] sm:text-[11.5px] tracking-[0.22em] sm:tracking-[0.28em] text-gray-400 uppercase font-semibold">
+                <span class="text-[10px] sm:text-[11.5px] tracking-[0.24em] sm:tracking-[0.28em] text-gray-300 sm:text-gray-400 uppercase font-medium sm:font-semibold">
                     PRONTO PARA O PRÓXIMO ATO?
                 </span>
-                <div class="w-9 h-[1.5px] bg-purple-400/60 mt-2.5 sm:mt-3 rounded-full"></div>
+                <div class="w-10 h-[1.5px] bg-purple-400/50 mt-3 rounded-full"></div>
             </div>
 
             <!-- 2. Título Dominante & Impactante -->
-            <h2 class="text-[2.1rem] sm:text-[3.2rem] lg:text-[4rem] xl:text-[4.4rem] leading-[1.1] sm:leading-[1.08] tracking-[-0.035em] text-center mb-5 sm:mb-7">
+            <h2 class="text-[2.25rem] sm:text-[3.2rem] lg:text-[4rem] xl:text-[4.4rem] leading-[1.1] sm:leading-[1.08] tracking-[-0.035em] text-center mb-5 sm:mb-7">
                 <span class="font-extrabold text-white">Seu próximo Ato</span><br>
-                <span class="font-extrabold text-[#B77BFF] drop-shadow-[0_0_35px_rgba(183,123,255,0.35)]">pode começar aqui.</span>
+                <span class="font-extrabold text-[#B77BFF] drop-shadow-[0_0_35px_rgba(183,123,255,0.4)]">pode começar aqui.</span>
             </h2>
 
             <!-- 3. Texto Explicativo -->
-            <p class="text-[0.94rem] sm:text-[1.12rem] text-purple-100/80 max-w-[580px] sm:max-w-[620px] mx-auto leading-[1.65] font-normal mb-8 sm:mb-12 px-1 sm:px-4">
+            <p class="text-[14px] sm:text-[1.05rem] lg:text-[1.12rem] text-purple-100/80 max-w-[325px] sm:max-w-[500px] lg:max-w-[620px] mx-auto leading-[1.65] font-normal mb-8 sm:mb-10 lg:mb-12 px-1 sm:px-4">
                 Conte pra gente o que sua empresa precisa. A partir daí, encontramos a melhor forma de transformar isso em uma página pronta para agir.
             </p>
 
             <!-- 4. Botões de Ação (CTAs) -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-5 mb-6 sm:mb-8 w-full max-w-[540px] px-0 sm:px-4">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-5 mb-6 sm:mb-8 w-full max-w-[320px] sm:max-w-[540px] mx-auto">
                 <!-- Botão Principal: Solicitar orçamento ↗ -->
-                <button type="button" onclick="openBudgetModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-9 py-3.5 sm:py-4.5 rounded-2xl text-[15px] sm:text-[16.5px] font-semibold text-white bg-gradient-to-r from-[#6314E8] via-[#7828F7] to-[#8C3FF8] hover:from-[#5510CB] hover:to-[#7E31EF] shadow-[0_8px_32px_rgba(120,40,247,0.45)] hover:shadow-[0_12px_40px_rgba(120,40,247,0.65)] hover:scale-[1.01] active:scale-[0.98] transition-all duration-300 cursor-pointer border border-white/20">
+                <button type="button" onclick="openBudgetModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-9 py-4 sm:py-4.5 rounded-2xl text-[15px] sm:text-[16.5px] font-bold sm:font-semibold text-white bg-gradient-to-r from-[#6314E8] via-[#7828F7] to-[#8C3FF8] hover:from-[#5510CB] hover:to-[#7E31EF] shadow-[0_8px_32px_rgba(120,40,247,0.5)] hover:shadow-[0_12px_40px_rgba(120,40,247,0.65)] hover:scale-[1.01] active:scale-[0.98] transition-all duration-300 cursor-pointer border border-white/20">
                     <span>Solicitar orçamento</span>
                     <span class="text-lg leading-none font-normal">↗</span>
                 </button>
 
                 <!-- Botão Secundário: Falar no WhatsApp -->
-                <a href="https://wa.me/5553991257648?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20o%20pr%C3%B3ximo%20Ato%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4.5 rounded-2xl text-[15px] sm:text-[16.5px] font-semibold text-white bg-white/[0.04] hover:bg-white/[0.09] border border-white/20 hover:border-purple-400/50 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:scale-[1.01] active:scale-[0.98] transition-all duration-300">
+                <a href="https://wa.me/5553991257648?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20o%20pr%C3%B3ximo%20Ato%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-4 sm:py-4.5 rounded-2xl text-[15px] sm:text-[16.5px] font-semibold text-white bg-black/40 sm:bg-white/[0.04] hover:bg-white/[0.09] border border-white/20 hover:border-purple-400/50 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:scale-[1.01] active:scale-[0.98] transition-all duration-300">
                     <!-- WhatsApp SVG Icon -->
                     <svg class="w-5 h-5 text-white fill-current" viewBox="0 0 24 24">
                         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.84 2.791.84 3.185 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.126-.523-1.458-.606-2.39-2.085-2.464-2.183-.07-.099-.588-.781-.588-1.488 0-.706.37-1.054.502-1.197.132-.144.288-.18.384-.18.096 0 .192.001.275.006.088.005.206-.033.322.246.12.288.408.995.444 1.068.036.073.06.158.012.254-.048.096-.072.156-.144.24-.072.084-.153.187-.218.251-.073.072-.15.15-.064.298.086.148.382.63.818 1.019.562.5 1.036.655 1.182.728.146.073.232.064.318-.035.086-.099.37-.432.468-.58.098-.148.196-.124.328-.075.132.049.837.394.981.466.144.072.24.108.276.169.036.06.036.353-.108.758zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.966-1.39A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.056c-1.637 0-3.161-.476-4.448-1.296l-.319-.204-2.957.827.842-2.883-.223-.332A7.999 7.999 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8.056-8 8.056z"/>
@@ -1308,15 +1365,16 @@
             </div>
 
             <!-- 5. Linha de Apoio -->
-            <p class="text-[11px] sm:text-[13px] text-gray-400 tracking-[0.03em] sm:tracking-[0.06em] font-normal mb-10 sm:mb-18">
+            <p class="text-[11px] sm:text-[13px] text-gray-400 tracking-[0.03em] sm:tracking-[0.06em] font-normal mb-8 sm:mb-14">
                 Resposta rápida &nbsp;·&nbsp; Atendimento direto &nbsp;·&nbsp; Projeto sob medida
             </p>
 
             <!-- 6. Fechamento no rodapé da seção -->
             <div class="flex flex-col items-center">
                 <div class="w-9 h-[1.5px] bg-purple-400/40 mb-3 rounded-full"></div>
-                <p class="text-xs sm:text-[15.5px] text-gray-400 font-normal">
-                    Bonito chama atenção. <span class="font-bold text-[#B77BFF]">Atos geram resultado.</span>
+                <p class="text-[13px] sm:text-[15.5px] text-gray-300 font-normal text-center leading-relaxed">
+                    Bonito chama atenção.<br class="sm:hidden">
+                    <span class="font-extrabold sm:font-bold text-[#B77BFF]">Atos geram resultado.</span>
                 </p>
             </div>
 
@@ -1443,6 +1501,45 @@
         </div>
 
     </footer>
+
+    <!-- ========================================================================= -->
+    <!-- MOBILE NAVIGATION MENU (DRAWER FLUIDO & ELEGANTE)                        -->
+    <!-- ========================================================================= -->
+    <div id="mobileNavMenu" class="fixed inset-0 z-50 bg-[#070510]/95 backdrop-blur-2xl flex flex-col justify-between p-6 sm:p-8 opacity-0 pointer-events-none transition-all duration-300 text-white" role="dialog" aria-modal="true" aria-label="Menu de navegação mobile">
+        <!-- Top bar inside drawer -->
+        <div class="flex items-center justify-between">
+            <div class="text-[1.6rem] font-bold tracking-tight text-white">
+                ATOS<span class="text-brand-purple">web</span>
+            </div>
+            <button type="button" onclick="toggleMobileNav()" aria-label="Fechar menu" class="p-2 -mr-2 text-gray-400 hover:text-white transition-colors cursor-pointer">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Links -->
+        <nav class="flex flex-col gap-6 text-[1.4rem] font-semibold tracking-tight my-auto">
+            <a href="#" onclick="toggleMobileNav()" class="text-white hover:text-brand-purple transition-colors">Início</a>
+            <a href="#beneficios" onclick="toggleMobileNav()" class="text-gray-300 hover:text-white transition-colors">Benefícios</a>
+            <a href="#servicos" onclick="toggleMobileNav()" class="text-gray-300 hover:text-white transition-colors">Serviços</a>
+            <a href="#portfolio" onclick="toggleMobileNav()" class="text-gray-300 hover:text-white transition-colors">Portfólio</a>
+            <a href="#sobre" onclick="toggleMobileNav()" class="text-gray-300 hover:text-white transition-colors">Sobre</a>
+            <a href="#faq" onclick="toggleMobileNav()" class="text-gray-300 hover:text-white transition-colors">FAQ</a>
+            <a href="#cta" onclick="toggleMobileNav()" class="text-gray-300 hover:text-white transition-colors">Contato</a>
+        </nav>
+
+        <!-- Drawer Bottom Actions -->
+        <div class="flex flex-col gap-3 pt-6 border-t border-white/10">
+            <button type="button" onclick="toggleMobileNav(); openBudgetModal();" class="w-full py-4 rounded-xl bg-brand-purple hover:bg-[#5213CA] text-white font-semibold text-center cursor-pointer shadow-[0_4px_20px_rgba(92,22,223,0.4)] transition-all">
+                Solicitar orçamento
+            </button>
+            <a href="https://wa.me/5553991257648?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] text-white font-semibold text-center flex items-center justify-center gap-2 border border-white/10 transition-all">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </div>
 
     <!-- ========================================================================= -->
     <!-- MODAL: SOLICITAR ORÇAMENTO (SIMPLIFICADO, OTIMIZADO & ALTO NÍVEL)        -->
@@ -1712,6 +1809,21 @@
                 }
             }
         }
+
+        function toggleMobileNav() {
+            const menu = document.getElementById('mobileNavMenu');
+            if (!menu) return;
+            const isOpen = menu.classList.contains('opacity-100');
+            if (isOpen) {
+                menu.classList.remove('opacity-100', 'pointer-events-auto');
+                menu.classList.add('opacity-0', 'pointer-events-none');
+                document.body.style.overflow = '';
+            } else {
+                menu.classList.remove('opacity-0', 'pointer-events-none');
+                menu.classList.add('opacity-100', 'pointer-events-auto');
+                document.body.style.overflow = 'hidden';
+            }
+        }
     </script>
 
     <!-- GSAP for smooth entrance and scroll animations -->
@@ -1750,8 +1862,8 @@
                 opacity: 0,
                 duration: 0.7
             }, '-=0.5')
-            // 5. Botões de CTA
-            .from('[data-hero="cta"]', {
+            // 5. Botões de CTA (Desktop e Mobile)
+            .from('[data-hero="cta"], [data-hero="cta-mobile"]', {
                 y: 14,
                 opacity: 0,
                 duration: 0.7
