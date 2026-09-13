@@ -254,8 +254,8 @@
                             Uma landing page bonita chama atenção. Uma landing page bem construída transforma atenção em interesse, interesse em confiança — e confiança em ação.
                         </p>
 
-                        <!-- Funnel Journey Flow -->
-                        <div class="inline-flex flex-wrap items-center gap-2 sm:gap-4 text-[9.5px] sm:text-[11px] tracking-[0.18em] sm:tracking-[0.24em] font-semibold text-gray-700 uppercase mb-8 lg:mb-14 py-2 sm:py-0 px-3 sm:px-0 rounded-xl sm:rounded-none bg-white/40 sm:bg-transparent border border-purple-100/60 sm:border-0 backdrop-blur-xs sm:backdrop-blur-none">
+                        <!-- Funnel Journey Flow (Oculto no mobile conforme solicitado) -->
+                        <div class="hidden lg:inline-flex flex-wrap items-center gap-2 sm:gap-4 text-[9.5px] sm:text-[11px] tracking-[0.18em] sm:tracking-[0.24em] font-semibold text-gray-700 uppercase mb-8 lg:mb-14 py-2 sm:py-0 px-3 sm:px-0 rounded-xl sm:rounded-none bg-white/40 sm:bg-transparent border border-purple-100/60 sm:border-0 backdrop-blur-xs sm:backdrop-blur-none">
                             <span>Atenção</span>
                             <span class="text-gray-400 font-normal">→</span>
                             <span>Interesse</span>
@@ -266,8 +266,8 @@
                         </div>
                     </div>
 
-                    <!-- Strategy Accent (Positioned above bottom decorative graphic) -->
-                    <div class="hidden sm:flex flex-col items-start gap-1 pt-6 lg:pt-10">
+                    <!-- Strategy Accent (Oculto no mobile) -->
+                    <div class="hidden lg:flex flex-col items-start gap-1 pt-6 lg:pt-10">
                         <span class="text-[9px] tracking-[0.28em] text-gray-500 font-semibold uppercase">Estratégia</span>
                         <span class="text-[9px] tracking-[0.28em] text-gray-500 font-semibold uppercase">Design</span>
                         <span class="text-[9px] tracking-[0.28em] text-gray-500 font-semibold uppercase">Resultados</span>
@@ -354,8 +354,8 @@
                     </p>
                 </div>
 
-                <!-- Right Side Accent (Ideias que viram resultados) -->
-                <div class="hidden sm:flex flex-col items-start md:items-end gap-1 flex-shrink-0">
+                <!-- Right Side Accent (Ideias que viram resultados - Oculto no mobile) -->
+                <div class="hidden lg:flex flex-col items-start md:items-end gap-1 flex-shrink-0">
                     <span class="text-[8.5px] tracking-[0.24em] text-gray-500 font-semibold uppercase">Ideias</span>
                     <span class="text-[8.5px] tracking-[0.24em] text-gray-500 font-semibold uppercase">que viram</span>
                     <span class="text-[8.5px] tracking-[0.24em] text-gray-500 font-semibold uppercase">resultados</span>
@@ -398,8 +398,8 @@
                     A ATOSweb une estratégia, direção visual e desenvolvimento para criar páginas que façam sentido para cada negócio — sem depender de soluções genéricas ou templates engessados.
                 </p>
 
-                <!-- Apresentação & Destaque -->
-                <div class="max-w-[580px] mx-auto">
+                <!-- Apresentação & Destaque (Oculto no mobile conforme solicitado) -->
+                <div class="hidden lg:block max-w-[580px] mx-auto">
                     <p class="text-[0.82rem] sm:text-[0.92rem] text-gray-500 mb-2 leading-relaxed">
                         Thales Designer está à frente da direção criativa dos projetos, acompanhando cada etapa da ideia à página publicada.
                     </p>
@@ -476,7 +476,7 @@
                 <p class="text-[1.22rem] sm:text-2xl lg:text-[1.75rem] font-normal text-brand-dark tracking-tight leading-snug">
                     Antes de gerar um Ato, a página precisa ter <span class="text-brand-purple font-bold">intenção.</span>
                 </p>
-                <div class="flex items-center justify-center gap-3 sm:gap-4 text-[8.5px] sm:text-[9.5px] tracking-[0.2em] sm:tracking-[0.25em] text-gray-500 font-semibold uppercase mt-3 sm:mt-4">
+                <div class="hidden lg:flex items-center justify-center gap-3 sm:gap-4 text-[8.5px] sm:text-[9.5px] tracking-[0.2em] sm:tracking-[0.25em] text-gray-500 font-semibold uppercase mt-3 sm:mt-4">
                     <span class="w-8 sm:w-16 h-[1px] bg-gray-300"></span>
                     <span>Estratégia</span>
                     <span class="text-gray-400">•</span>
@@ -495,7 +495,7 @@
     </section>
 
     <!-- SECTION 4: O QUE PODEMOS CRIAR POR VOCÊ / SERVIÇOS -->
-    <section id="servicos" class="relative w-full min-h-screen -mt-[2px] bg-cover bg-[position:68%_center] lg:bg-center overflow-hidden flex flex-col justify-between py-16 sm:py-20 lg:py-28" style="background-image: url('assets/section4bg.png');">
+    <section id="servicos" class="relative w-full min-h-screen -mt-[2px] bg-cover bg-[position:68%_center] lg:bg-center overflow-hidden flex flex-col justify-between py-20 sm:py-20 lg:py-28" style="background-image: url('assets/section4bg.png');">
         
         <!-- Top Seam Transition from Section 3 (Smooth Atmospheric Blend) -->
         <div class="pointer-events-none absolute top-0 left-0 w-full h-32 lg:h-48 bg-gradient-to-b from-[#F7F6FD] via-[#F7F6FD]/60 to-transparent z-[2]"></div>
@@ -524,18 +524,18 @@
             </div>
 
             <!-- Services List (5 Rows rigorously matching section4-ref.png) -->
-            <div class="w-full my-8 sm:my-10 lg:my-14 flex flex-col gap-2.5 sm:gap-3.5" data-s4="list">
+            <div class="w-full my-8 sm:my-10 lg:my-14 flex flex-col gap-3.5 sm:gap-3.5" data-s4="list">
                 
                 <!-- 01: Landing Pages & Sites Institucionais -->
-                <div data-s4="item" class="group relative w-full rounded-2xl px-4 sm:px-8 py-4.5 sm:py-6 transition-all duration-300 border-b border-gray-200/70 hover:bg-purple-50/40">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 md:gap-6">
+                <div data-s4="item" class="group relative w-full rounded-2xl p-5 sm:px-8 sm:py-6 transition-all duration-300 bg-white/60 sm:bg-transparent border border-purple-100/70 sm:border-0 sm:border-b sm:border-gray-200/70 shadow-xs sm:shadow-none hover:bg-purple-50/40">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3.5 sm:gap-4 md:gap-6">
                         
                         <!-- Left: Number & Content -->
                         <div class="flex items-start sm:items-center gap-3.5 sm:gap-8 flex-1">
                             <span class="text-lg sm:text-2xl font-semibold sm:font-medium text-brand-purple/70 tracking-tight flex-shrink-0 w-6 sm:w-8">01</span>
                             <div class="w-[1px] h-10 bg-gray-200 hidden sm:block"></div>
                             <div>
-                                <h3 class="text-base sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
+                                <h3 class="text-[1.05rem] sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
                                     Landing Pages & Sites Institucionais
                                 </h3>
                                 <p class="text-[0.82rem] sm:text-[0.88rem] text-gray-500 leading-relaxed max-w-2xl">
@@ -545,12 +545,12 @@
                         </div>
 
                         <!-- Right: Price & Action Icon -->
-                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-2.5 md:pt-0 border-t md:border-t-0 border-gray-100 flex-shrink-0">
+                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-3 md:pt-0 border-t md:border-t-0 border-purple-100/60 sm:border-gray-100 flex-shrink-0 mt-1 md:mt-0">
                             <div class="flex flex-col text-left md:text-right">
                                 <span class="text-[9.5px] sm:text-[10px] text-gray-400 font-medium tracking-wide">A partir de</span>
                                 <span class="text-base sm:text-xl font-bold text-brand-dark tracking-tight">R$287</span>
                             </div>
-                            <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-purple-50/70 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-purple-50/80 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
                                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7"></line>
                                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -562,15 +562,15 @@
                 </div>
 
                 <!-- 02: Loja Simples -->
-                <div data-s4="item" class="group relative w-full rounded-2xl px-4 sm:px-8 py-4.5 sm:py-6 transition-all duration-300 border-b border-gray-200/70 hover:bg-purple-50/40">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 md:gap-6">
+                <div data-s4="item" class="group relative w-full rounded-2xl p-5 sm:px-8 sm:py-6 transition-all duration-300 bg-white/60 sm:bg-transparent border border-purple-100/70 sm:border-0 sm:border-b sm:border-gray-200/70 shadow-xs sm:shadow-none hover:bg-purple-50/40">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3.5 sm:gap-4 md:gap-6">
                         
                         <!-- Left: Number & Content -->
                         <div class="flex items-start sm:items-center gap-3.5 sm:gap-8 flex-1">
                             <span class="text-lg sm:text-2xl font-semibold sm:font-medium text-brand-purple/70 tracking-tight flex-shrink-0 w-6 sm:w-8">02</span>
                             <div class="w-[1px] h-10 bg-gray-200 hidden sm:block"></div>
                             <div>
-                                <h3 class="text-base sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
+                                <h3 class="text-[1.05rem] sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
                                     Loja Simples
                                 </h3>
                                 <p class="text-[0.82rem] sm:text-[0.88rem] text-gray-500 leading-relaxed max-w-2xl">
@@ -580,12 +580,12 @@
                         </div>
 
                         <!-- Right: Price & Action Icon -->
-                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-2.5 md:pt-0 border-t md:border-t-0 border-gray-100 flex-shrink-0">
+                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-3 md:pt-0 border-t md:border-t-0 border-purple-100/60 sm:border-gray-100 flex-shrink-0 mt-1 md:mt-0">
                             <div class="flex flex-col text-left md:text-right">
                                 <span class="text-[9.5px] sm:text-[10px] text-gray-400 font-medium tracking-wide">A partir de</span>
                                 <span class="text-base sm:text-xl font-bold text-brand-dark tracking-tight">R$897</span>
                             </div>
-                            <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-purple-50/70 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-purple-50/80 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
                                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7"></line>
                                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -597,15 +597,15 @@
                 </div>
 
                 <!-- 03: Catálogo / Cardápio Digital -->
-                <div data-s4="item" class="group relative w-full rounded-2xl px-4 sm:px-8 py-4.5 sm:py-6 transition-all duration-300 border-b border-gray-200/70 hover:bg-purple-50/40">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 md:gap-6">
+                <div data-s4="item" class="group relative w-full rounded-2xl p-5 sm:px-8 sm:py-6 transition-all duration-300 bg-white/60 sm:bg-transparent border border-purple-100/70 sm:border-0 sm:border-b sm:border-gray-200/70 shadow-xs sm:shadow-none hover:bg-purple-50/40">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3.5 sm:gap-4 md:gap-6">
                         
                         <!-- Left: Number & Content -->
                         <div class="flex items-start sm:items-center gap-3.5 sm:gap-8 flex-1">
                             <span class="text-lg sm:text-2xl font-semibold sm:font-medium text-brand-purple/70 tracking-tight flex-shrink-0 w-6 sm:w-8">03</span>
                             <div class="w-[1px] h-10 bg-gray-200 hidden sm:block"></div>
                             <div>
-                                <h3 class="text-base sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
+                                <h3 class="text-[1.05rem] sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
                                     Catálogo / Cardápio Digital
                                 </h3>
                                 <p class="text-[0.82rem] sm:text-[0.88rem] text-gray-500 leading-relaxed max-w-2xl">
@@ -615,12 +615,12 @@
                         </div>
 
                         <!-- Right: Price & Action Icon -->
-                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-2.5 md:pt-0 border-t md:border-t-0 border-gray-100 flex-shrink-0">
+                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-3 md:pt-0 border-t md:border-t-0 border-purple-100/60 sm:border-gray-100 flex-shrink-0 mt-1 md:mt-0">
                             <div class="flex flex-col text-left md:text-right">
                                 <span class="text-[9.5px] sm:text-[10px] text-transparent font-medium tracking-wide select-none">Valor</span>
                                 <span class="text-base sm:text-xl font-bold text-brand-dark tracking-tight">R$489</span>
                             </div>
-                            <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-purple-50/70 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-purple-50/80 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
                                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7"></line>
                                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -632,15 +632,15 @@
                 </div>
 
                 <!-- 04: Consultoria ATOS (DESTAQUE VISUAL com card translúcido e bordas suaves) -->
-                <div data-s4="item" class="group relative w-full rounded-2xl px-4 sm:px-8 py-4.5 sm:py-6 bg-[#EBE7FD]/65 backdrop-blur-sm border border-purple-200/80 shadow-sm transition-all duration-300 hover:bg-[#E4DEFD]/80 hover:shadow-md">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 md:gap-6">
+                <div data-s4="item" class="group relative w-full rounded-2xl p-5 sm:px-8 sm:py-6 bg-[#EBE7FD]/75 sm:bg-[#EBE7FD]/65 backdrop-blur-sm border border-purple-200/90 sm:border-purple-200/80 shadow-sm transition-all duration-300 hover:bg-[#E4DEFD]/80 hover:shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3.5 sm:gap-4 md:gap-6">
                         
                         <!-- Left: Number & Content -->
                         <div class="flex items-start sm:items-center gap-3.5 sm:gap-8 flex-1">
                             <span class="text-lg sm:text-2xl font-bold text-brand-purple tracking-tight flex-shrink-0 w-6 sm:w-8">04</span>
                             <div class="w-[1px] h-10 bg-purple-300 hidden sm:block"></div>
                             <div>
-                                <h3 class="text-base sm:text-[1.3rem] font-bold text-brand-purple tracking-tight mb-1">
+                                <h3 class="text-[1.05rem] sm:text-[1.3rem] font-bold text-brand-purple tracking-tight mb-1">
                                     Consultoria ATOS
                                 </h3>
                                 <p class="text-[0.82rem] sm:text-[0.88rem] text-gray-600 leading-relaxed max-w-2xl">
@@ -650,12 +650,12 @@
                         </div>
 
                         <!-- Right: Price & Action Icon -->
-                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-2.5 md:pt-0 border-t md:border-t-0 border-purple-200/60 flex-shrink-0">
+                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-3 md:pt-0 border-t md:border-t-0 border-purple-200/60 flex-shrink-0 mt-1 md:mt-0">
                             <div class="flex flex-col text-left md:text-right">
                                 <span class="text-[9.5px] sm:text-[10px] text-gray-500 font-medium tracking-wide">A partir de</span>
                                 <span class="text-base sm:text-xl font-extrabold text-brand-dark tracking-tight">R$689</span>
                             </div>
-                            <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/90 border border-purple-200 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 border border-purple-200 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
                                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7"></line>
                                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -667,15 +667,15 @@
                 </div>
 
                 <!-- 05: Identidade Visual -->
-                <div data-s4="item" class="group relative w-full rounded-2xl px-4 sm:px-8 py-4.5 sm:py-6 transition-all duration-300 hover:bg-purple-50/40">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 md:gap-6">
+                <div data-s4="item" class="group relative w-full rounded-2xl p-5 sm:px-8 sm:py-6 transition-all duration-300 bg-white/60 sm:bg-transparent border border-purple-100/70 sm:border-0 sm:border-b sm:border-gray-200/70 shadow-xs sm:shadow-none hover:bg-purple-50/40">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3.5 sm:gap-4 md:gap-6">
                         
                         <!-- Left: Number & Content -->
                         <div class="flex items-start sm:items-center gap-3.5 sm:gap-8 flex-1">
                             <span class="text-lg sm:text-2xl font-semibold sm:font-medium text-brand-purple/70 tracking-tight flex-shrink-0 w-6 sm:w-8">05</span>
                             <div class="w-[1px] h-10 bg-gray-200 hidden sm:block"></div>
                             <div>
-                                <h3 class="text-base sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
+                                <h3 class="text-[1.05rem] sm:text-[1.25rem] font-bold text-brand-dark tracking-tight mb-1 group-hover:text-brand-purple transition-colors">
                                     Identidade Visual
                                 </h3>
                                 <p class="text-[0.82rem] sm:text-[0.88rem] text-gray-500 leading-relaxed max-w-2xl">
@@ -685,12 +685,12 @@
                         </div>
 
                         <!-- Right: Price & Action Icon -->
-                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-2.5 md:pt-0 border-t md:border-t-0 border-gray-100 flex-shrink-0">
+                        <div class="flex items-center justify-between md:justify-end gap-4 sm:gap-8 pt-3 md:pt-0 border-t md:border-t-0 border-purple-100/60 sm:border-gray-100 flex-shrink-0 mt-1 md:mt-0">
                             <div class="flex flex-col text-left md:text-right">
                                 <span class="text-[9.5px] sm:text-[10px] text-gray-400 font-medium tracking-wide">A partir de</span>
                                 <span class="text-base sm:text-xl font-bold text-brand-dark tracking-tight">R$119</span>
                             </div>
-                            <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-purple-50/70 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-purple-50/80 border border-purple-100 group-hover:bg-brand-purple group-hover:text-white group-hover:border-transparent text-brand-purple flex items-center justify-center transition-all duration-300 flex-shrink-0 shadow-sm">
                                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="7" y1="17" x2="17" y2="7"></line>
                                     <polyline points="7 7 17 7 17 17"></polyline>
@@ -1000,7 +1000,10 @@
     <!-- ========================================================================= -->
     <!-- SECTION 7: PROVA REAL / DEPOIMENTOS                                       -->
     <!-- ========================================================================= -->
-    <section id="depoimentos" class="relative w-full bg-[#FAF9FE] bg-cover bg-center overflow-hidden py-16 sm:py-32 lg:py-40" style="background-image: url('assets/section7bg.png');">
+    <!-- ========================================================================= -->
+    <!-- SECTION 7: PROVA REAL / DEPOIMENTOS                                       -->
+    <!-- ========================================================================= -->
+    <section id="depoimentos" class="relative w-full bg-[#FAF9FE] bg-cover bg-center overflow-hidden py-20 sm:py-32 lg:py-40" style="background-image: url('assets/section7bg.png');">
         
         <!-- Top Seam Transition: Perfectly dissolves from Section 6's atmosphere -->
         <div class="pointer-events-none absolute top-0 left-0 w-full h-28 lg:h-44 bg-gradient-to-b from-[#F7F6FD] via-[#F7F6FD]/40 to-transparent z-[2]"></div>
@@ -1032,20 +1035,20 @@
                     </p>
                 </div>
 
-                <!-- Right Column: Editorial Testimonials (Puxado levemente para alinhar a escrita com o título da seção) -->
+                <!-- Right Column: Editorial Testimonials -->
                 <div class="lg:col-span-6 flex flex-col justify-start pt-2 lg:pt-11 xl:pt-12">
                     
                     <!-- Testimonial 01 (Real & Confiável) -->
-                    <div class="group flex items-start gap-3.5 sm:gap-7 pb-8 sm:pb-12 border-b border-purple-200/50">
+                    <div class="group flex items-start gap-3.5 sm:gap-7 p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/70 sm:bg-transparent border border-purple-100/80 sm:border-0 sm:border-b sm:border-purple-200/50 shadow-xs sm:shadow-none mb-6 sm:mb-0 sm:pb-12">
                         <!-- Large Stylized Quotation Mark SVG -->
-                        <div class="flex-shrink-0 pt-1">
-                            <svg class="w-8 h-6 sm:w-13 sm:h-10 lg:w-14 lg:h-11 text-purple-300/80 group-hover:text-brand-purple transition-colors fill-current" viewBox="0 0 56 42">
+                        <div class="flex-shrink-0 pt-0.5 sm:pt-1">
+                            <svg class="w-7 h-5 sm:w-13 sm:h-10 lg:w-14 lg:h-11 text-purple-300/80 group-hover:text-brand-purple transition-colors fill-current" viewBox="0 0 56 42">
                                 <path d="M0 24C0 10.7 7.7 2.1 21 0l3 5.3C15.8 7.7 12 12.8 11.2 17.5c1.8-.7 3.8-1 5.8-1 6.6 0 12 5.4 12 12 0 7.5-5.8 13.5-13.5 13.5C6.9 42 0 34.6 0 24zm28 0c0-13.3 7.7-21.9 21-24l3 5.3c-8.2 2.4-12 7.5-12.8 12.2 1.8-.7 3.8-1 5.8-1 6.6 0 12 5.4 12 12 0 7.5-5.8 13.5-13.5 13.5C34.9 42 28 34.6 28 24z"/>
                             </svg>
                         </div>
 
                         <!-- Vertical Divider Line & Quote Text Content -->
-                        <div class="pl-3.5 sm:pl-7 border-l border-gray-200/80 flex flex-col">
+                        <div class="pl-3.5 sm:pl-7 border-l border-purple-100 sm:border-gray-200/80 flex flex-col flex-1">
                             <!-- Rating Stars: Real social proof cue -->
                             <div class="flex items-center gap-1 mb-2.5 sm:mb-3 text-amber-400">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -1055,7 +1058,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
 
-                            <p class="text-[1.02rem] sm:text-[1.22rem] lg:text-[1.32rem] leading-[1.48] sm:leading-[1.46] text-brand-dark tracking-[-0.015em] font-medium mb-4 sm:mb-6">
+                            <p class="text-[0.98rem] sm:text-[1.22rem] lg:text-[1.32rem] leading-[1.6] sm:leading-[1.46] text-brand-dark tracking-[-0.015em] font-medium mb-4 sm:mb-6">
                                 O site ficou muito mais profissional e agora consigo apresentar meu trabalho com muito <span class="text-brand-purple font-bold">mais confiança.</span> O perfil dos clientes mudou — hoje eles já chegam pelo WhatsApp decididos a contratar.
                             </p>
 
@@ -1079,16 +1082,16 @@
                     </div>
 
                     <!-- Testimonial 02 (Real & Confiável) -->
-                    <div class="group flex items-start gap-3.5 sm:gap-7 pt-8 sm:pt-12">
+                    <div class="group flex items-start gap-3.5 sm:gap-7 p-5 sm:p-0 rounded-2xl sm:rounded-none bg-white/70 sm:bg-transparent border border-purple-100/80 sm:border-0 shadow-xs sm:shadow-none sm:pt-12">
                         <!-- Large Stylized Quotation Mark SVG -->
-                        <div class="flex-shrink-0 pt-1">
-                            <svg class="w-8 h-6 sm:w-13 sm:h-10 lg:w-14 lg:h-11 text-purple-300/80 group-hover:text-brand-purple transition-colors fill-current" viewBox="0 0 56 42">
+                        <div class="flex-shrink-0 pt-0.5 sm:pt-1">
+                            <svg class="w-7 h-5 sm:w-13 sm:h-10 lg:w-14 lg:h-11 text-purple-300/80 group-hover:text-brand-purple transition-colors fill-current" viewBox="0 0 56 42">
                                 <path d="M0 24C0 10.7 7.7 2.1 21 0l3 5.3C15.8 7.7 12 12.8 11.2 17.5c1.8-.7 3.8-1 5.8-1 6.6 0 12 5.4 12 12 0 7.5-5.8 13.5-13.5 13.5C6.9 42 0 34.6 0 24zm28 0c0-13.3 7.7-21.9 21-24l3 5.3c-8.2 2.4-12 7.5-12.8 12.2 1.8-.7 3.8-1 5.8-1 6.6 0 12 5.4 12 12 0 7.5-5.8 13.5-13.5 13.5C34.9 42 28 34.6 28 24z"/>
                             </svg>
                         </div>
 
                         <!-- Vertical Divider Line & Quote Text Content -->
-                        <div class="pl-3.5 sm:pl-7 border-l border-gray-200/80 flex flex-col">
+                        <div class="pl-3.5 sm:pl-7 border-l border-purple-100 sm:border-gray-200/80 flex flex-col flex-1">
                             <!-- Rating Stars: Real social proof cue -->
                             <div class="flex items-center gap-1 mb-2.5 sm:mb-3 text-amber-400">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -1098,7 +1101,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
 
-                            <p class="text-[1.02rem] sm:text-[1.22rem] lg:text-[1.32rem] leading-[1.48] sm:leading-[1.46] text-brand-dark tracking-[-0.015em] font-medium mb-4 sm:mb-6">
+                            <p class="text-[0.98rem] sm:text-[1.22rem] lg:text-[1.32rem] leading-[1.6] sm:leading-[1.46] text-brand-dark tracking-[-0.015em] font-medium mb-4 sm:mb-6">
                                 Além do visual impecável, o processo me ajudou a entender melhor <span class="text-brand-purple font-bold">como vender meu serviço.</span> Nossa taxa de conversão dobrou logo no primeiro mês com a nova estrutura comercial.
                             </p>
 
@@ -1151,7 +1154,7 @@
         }
     </style>
 
-    <section id="faq" class="relative w-full bg-[#FAF9FE] bg-cover bg-center overflow-hidden py-16 sm:py-32 lg:py-36" style="background-image: url('assets/section8bg.png');">
+    <section id="faq" class="relative w-full bg-[#FAF9FE] bg-cover bg-center overflow-hidden py-20 sm:py-32 lg:py-36" style="background-image: url('assets/section8bg.png');">
         
         <!-- Top Seam Transition: Encaixe perfeito e contínuo com a atmosfera da Section 7 -->
         <div class="pointer-events-none absolute top-0 left-0 w-full h-28 lg:h-44 bg-gradient-to-b from-[#F7F6FD] via-[#F7F6FD]/40 to-transparent z-[2]"></div>
@@ -1161,7 +1164,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 xl:gap-20 items-start">
                 
                 <!-- LADO ESQUERDO: Eyebrow + Título + Narrativa + Divisória + Próximo Passo -->
-                <div class="lg:col-span-5 flex flex-col justify-start">
+                <div class="lg:col-span-5 flex flex-col justify-start mb-2 lg:mb-0">
                     <!-- Eyebrow with decorative purple bar -->
                     <div class="flex flex-col items-start mb-5 sm:mb-8">
                         <span class="text-[9.5px] sm:text-[11px] tracking-[0.25em] sm:tracking-[0.3em] text-gray-500 uppercase font-semibold">F A Q</span>
@@ -1179,32 +1182,34 @@
                         Reunimos aqui as perguntas mais comuns para você entender como funciona o processo e contratar com mais segurança.
                     </p>
 
-                    <!-- Divisória Fina -->
-                    <div class="w-full max-w-[340px] sm:max-w-[380px] h-[1px] bg-purple-200/70 mb-5 sm:mb-8"></div>
+                    <!-- Divisória Fina Desktop -->
+                    <div class="hidden sm:block w-full max-w-[340px] sm:max-w-[380px] h-[1px] bg-purple-200/70 mb-5 sm:mb-8"></div>
 
-                    <!-- Próximo Passo -->
-                    <p class="text-[0.92rem] sm:text-[1.05rem] text-gray-600 leading-[1.55] font-normal">
-                        Se ainda restar alguma dúvida,<br>
-                        o próximo passo é <button type="button" onclick="openBudgetModal()" class="text-brand-purple font-semibold hover:underline underline-offset-4 cursor-pointer focus:outline-none">conversar.</button>
-                    </p>
+                    <!-- Próximo Passo: Box acolhedor no mobile, limpo no desktop -->
+                    <div class="p-4 sm:p-0 rounded-2xl sm:rounded-none bg-white/60 sm:bg-transparent border border-purple-100/80 sm:border-0 shadow-xs sm:shadow-none">
+                        <p class="text-[0.92rem] sm:text-[1.05rem] text-gray-600 leading-[1.55] font-normal">
+                            Se ainda restar alguma dúvida,<br>
+                            o próximo passo é <button type="button" onclick="openBudgetModal()" class="text-brand-purple font-bold hover:underline underline-offset-4 cursor-pointer focus:outline-none">conversar.</button>
+                        </p>
+                    </div>
                 </div>
 
-                <!-- LADO DIREITO: Accordion Minimalista & Editorial -->
-                <div class="lg:col-span-7 flex flex-col justify-start border-t border-purple-200/70 faq-container">
+                <!-- LADO DIREITO: Accordion Minimalista & Editorial com Cards Arejados no Mobile -->
+                <div class="lg:col-span-7 flex flex-col justify-start gap-3 sm:gap-0 sm:border-t sm:border-purple-200/70 faq-container">
                     
                     <!-- Pergunta 1 (Inicia aberta conforme referência visual) -->
-                    <div class="faq-item active border-b border-purple-200/70">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-4.5 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="true">
+                    <div class="faq-item active p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="true">
                             <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-bold text-brand-purple transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
                                 Quanto tempo leva para ficar pronto?
                             </span>
-                            <span class="faq-icon text-xl sm:text-[1.75rem] font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 −
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.85rem] sm:text-[1.02rem] text-gray-500 leading-[1.65] font-normal pb-5 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
                                     O prazo varia conforme o tipo de projeto, mas sempre alinhamos isso no início para que você saiba exatamente o que esperar.
                                 </p>
                             </div>
@@ -1212,18 +1217,18 @@
                     </div>
 
                     <!-- Pergunta 2 -->
-                    <div class="faq-item border-b border-purple-200/70">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-4.5 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
                             <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
                                 Preciso já ter domínio e hospedagem?
                             </span>
-                            <span class="faq-icon text-xl sm:text-[1.75rem] font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.85rem] sm:text-[1.02rem] text-gray-500 leading-[1.65] font-normal pb-5 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
                                     Não. Se você ainda não tiver, podemos orientar todo o processo e indicar a melhor solução para o seu projeto.
                                 </p>
                             </div>
@@ -1231,18 +1236,18 @@
                     </div>
 
                     <!-- Pergunta 3 -->
-                    <div class="faq-item border-b border-purple-200/70">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-4.5 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
                             <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
                                 Vocês fazem alterações depois da entrega?
                             </span>
-                            <span class="faq-icon text-xl sm:text-[1.75rem] font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.85rem] sm:text-[1.02rem] text-gray-500 leading-[1.65] font-normal pb-5 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
                                     Sim. Ajustes previstos no projeto são realizados durante o desenvolvimento e também podemos combinar suporte ou alterações futuras conforme a necessidade.
                                 </p>
                             </div>
@@ -1250,18 +1255,18 @@
                     </div>
 
                     <!-- Pergunta 4 -->
-                    <div class="faq-item border-b border-purple-200/70">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-4.5 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
                             <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
                                 Como funciona o pagamento?
                             </span>
-                            <span class="faq-icon text-xl sm:text-[1.75rem] font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.85rem] sm:text-[1.02rem] text-gray-500 leading-[1.65] font-normal pb-5 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
                                     As condições são alinhadas antes do início do projeto. A forma de pagamento pode variar conforme o serviço contratado.
                                 </p>
                             </div>
@@ -1269,18 +1274,18 @@
                     </div>
 
                     <!-- Pergunta 5 -->
-                    <div class="faq-item border-b border-purple-200/70">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-4.5 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
                             <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
                                 O que eu preciso enviar para começar?
                             </span>
-                            <span class="faq-icon text-xl sm:text-[1.75rem] font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.85rem] sm:text-[1.02rem] text-gray-500 leading-[1.65] font-normal pb-5 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
                                     Depende do projeto, mas normalmente precisamos das informações do negócio, serviços, textos, identidade visual, imagens e referências que você já possuir.
                                 </p>
                             </div>
@@ -1288,18 +1293,18 @@
                     </div>
 
                     <!-- Pergunta 6 -->
-                    <div class="faq-item border-b border-purple-200/70">
-                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-4.5 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
+                    <div class="faq-item p-4.5 sm:p-0 rounded-2xl sm:rounded-none bg-white/80 sm:bg-transparent border border-purple-100/90 sm:border-0 sm:border-b sm:border-purple-200/70 shadow-xs sm:shadow-none transition-all duration-200">
+                        <button type="button" onclick="toggleFaq(this)" class="faq-trigger w-full flex items-center justify-between text-left gap-3.5 sm:gap-4 py-1 sm:py-6 cursor-pointer focus:outline-none group select-none" aria-expanded="false">
                             <span class="faq-question text-[0.98rem] sm:text-[1.18rem] font-semibold text-brand-dark transition-colors duration-200 group-hover:text-brand-purple tracking-tight pr-2">
                                 A página vai funcionar no celular?
                             </span>
-                            <span class="faq-icon text-xl sm:text-[1.75rem] font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
+                            <span class="faq-icon w-7 h-7 sm:w-auto sm:h-auto rounded-full sm:rounded-none bg-purple-50 sm:bg-transparent flex items-center justify-center text-lg sm:text-[1.75rem] font-medium sm:font-light text-brand-purple flex-shrink-0 transition-transform duration-200 leading-none select-none">
                                 +
                             </span>
                         </button>
                         <div class="faq-content-grid">
                             <div class="faq-content-inner">
-                                <p class="text-[0.85rem] sm:text-[1.02rem] text-gray-500 leading-[1.65] font-normal pb-5 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
+                                <p class="text-[0.88rem] sm:text-[1.02rem] text-gray-600 sm:text-gray-500 leading-[1.65] font-normal pt-2.5 pb-2 sm:pt-0 sm:pb-6 pr-2 sm:pr-6 max-w-[620px]">
                                     Sim. Todos os projetos são desenvolvidos de forma responsiva para funcionar corretamente em desktop, tablet e celular.
                                 </p>
                             </div>
